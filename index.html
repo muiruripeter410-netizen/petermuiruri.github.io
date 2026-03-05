@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Thuo Muiruri | Data Analyst & Statistician</title>
+    
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library (lightweight) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Video/Abstract Motion Element (2026 trend) [citation:1] -->
+    <div class="bg-abstract"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">PETER THUO</span>
+                <span class="logo-dot"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Motion (2026 trend) [citation:1] -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <div class="hero-badge glass-effect">DATA ANALYST & STATISTICIAN</div>
+                <h1 class="hero-title">
+                    <span class="title-line">TRANSFORMING</span>
+                    <span class="title-line gradient-text">DATA TO INSIGHTS</span>
+                </h1>
+                <p class="hero-subtitle">Your request, our command — rigorous analysis, clear results.</p>
+                <div class="hero-cta">
+                    <a href="#work" class="btn-primary glass-button">VIEW PROJECTS <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn-secondary">LET'S TALK</a>
+                </div>
+            </div>
+            <div class="hero-visual" data-aos="fade-left" data-aos-duration="1200">
+                <!-- Interactive Data Visualization Preview (Card Play trend) [citation:7] -->
+                <div class="data-cards">
+                    <div class="data-card card-1 glass-effect">
+                        <div class="card-bar" style="height: 70%;"></div>
+                        <span>78%</span>
+                    </div>
+                    <div class="data-card card-2 glass-effect">
+                        <div class="card-bar" style="height: 45%;"></div>
+                        <span>45%</span>
+                    </div>
+                    <div class="data-card card-3 glass-effect">
+                        <div class="card-bar" style="height: 92%;"></div>
+                        <span>92%</span>
+                    </div>
+                    <div class="data-card card-4 glass-effect">
+                        <div class="card-bar" style="height: 63%;"></div>
+                        <span>63%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Services Section - Clickable Cards (Card Play trend) [citation:7] -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">EXPERTISE</span>
+                <h2>Services That Drive <span class="gold-text">Decisions</span></h2>
+                <p>From raw data to actionable insights — I deliver clarity and precision.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service Card 1 - Clickable -->
+                <div class="service-card glass-effect" data-aos="flip-up" data-aos-delay="100" onclick="showServiceDetail('cleaning')">
+                    <div class="card-icon">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <h3>Data Cleaning & Validation</h3>
+                    <p>Ensuring your data is accurate, consistent, and analysis-ready.</p>
+                    <div class="card-hover-indicator">
+                        <span>Learn more</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card glass-effect" data-aos="flip-up" data-aos-delay="200" onclick="showServiceDetail('analysis')">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Statistical Analysis</h3>
+                    <p>R, SPSS, Minitab, Excel — rigorous testing and modeling.</p>
+                    <div class="card-hover-indicator">
+                        <span>Learn more</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="service-card glass-effect" data-aos="flip-up" data-aos-delay="300" onclick="showServiceDetail('hypothesis')">
+                    <div class="card-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Hypothesis Testing</h3>
+                    <p>Validate assumptions with statistical rigor.</p>
+                    <div class="card-hover-indicator">
+                        <span>Learn more</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="service-card glass-effect" data-aos="flip-up" data-aos-delay="400" onclick="showServiceDetail('eda')">
+                    <div class="card-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Exploratory Data Analysis</h3>
+                    <p>Uncover hidden patterns and trends.</p>
+                    <div class="card-hover-indicator">
+                        <span>Learn more</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <!-- Service Card 5 -->
+                <div class="service-card glass-effect" data-aos="flip-up" data-aos-delay="500" onclick="showServiceDetail('visualization')">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Visualization & Reporting</h3>
+                    <p>Clear, impactful visuals and comprehensive reports.</p>
+                    <div class="card-hover-indicator">
+                        <span>Learn more</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <!-- Service Card 6 -->
+                <div class="service-card glass-effect" data-aos="flip-up" data-aos-delay="600" onclick="showServiceDetail('mande')">
+                    <div class="card-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>M&E & Budget Planning</h3>
+                    <p>County-level project evaluation and financial insights.</p>
+                    <div class="card-hover-indicator">
+                        <span>Learn more</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section - Clickable Project Cards (Motion Narrative trend) [citation:7] -->
+    <section id="work" class="work">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">PORTFOLIO</span>
+                <h2>Featured <span class="gold-text">Projects</span></h2>
+                <p>Real-world impact through data.</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 - County Government -->
+                <div class="project-card glass-effect" data-aos="fade-right" onclick="window.location.href='#project-nakuru'">
+                    <div class="project-image">
+                        <div class="project-overlay"></div>
+                        <i class="fas fa-landmark project-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>R</span>
+                            <span>SPSS</span>
+                            <span>Excel</span>
+                        </div>
+                        <h3>Nakuru County Budget Analysis</h3>
+                        <p>Statistical insights for county development planning and resource allocation.</p>
+                        <div class="project-link">
+                            <span>View case study</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 - Freelance Retail Analysis -->
+                <div class="project-card glass-effect" data-aos="fade-up" onclick="window.location.href='#project-retail'">
+                    <div class="project-image">
+                        <div class="project-overlay"></div>
+                        <i class="fas fa-store project-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Power BI</span>
+                            <span>R</span>
+                            <span>Analysis</span>
+                        </div>
+                        <h3>Retail Sales Performance</h3>
+                        <p>Actionable insights for inventory optimization and revenue growth.</p>
+                        <div class="project-link">
+                            <span>View case study</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 - University Research -->
+                <div class="project-card glass-effect" data-aos="fade-left" onclick="window.location.href='#project-demographic'">
+                    <div class="project-image">
+                        <div class="project-overlay"></div>
+                        <i class="fas fa-university project-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Minitab</span>
+                            <span>Research</span>
+                            <span>Visualization</span>
+                        </div>
+                        <h3>Demographic Trend Analysis</h3>
+                        <p>Research project examining population patterns and projections.</p>
+                        <div class="project-link">
+                            <span>View case study</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="center-btn" data-aos="fade-up">
+                <a href="#" class="btn-primary glass-button">VIEW ALL PROJECTS <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section - with Skills -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content" data-aos="fade-right">
+                    <div class="section-header left">
+                        <span class="section-tag">ABOUT</span>
+                        <h2>Peter Thuo <span class="gold-text">Muiruri</span></h2>
+                    </div>
+                    
+                    <p class="about-lead">Results-oriented Statistician and Data Analyst with a strong foundation in research, data interpretation, and statistical modeling.</p>
+                    
+                    <p>Proven ability to leverage advanced statistical tools to extract meaningful insights and inform strategic decision-making. Adept at collaborating with cross-functional teams and delivering critical findings on time.</p>
+                    
+                    <div class="experience-badge glass-effect">
+                        <div class="exp-item">
+                            <span class="exp-number">4+</span>
+                            <span class="exp-label">Years Experience</span>
+                        </div>
+                        <div class="exp-item">
+                            <span class="exp-number">20+</span>
+                            <span class="exp-label">Projects Completed</span>
+                        </div>
+                        <div class="exp-item">
+                            <span class="exp-number">5</span>
+                            <span class="exp-label">Statistical Tools</span>
+                        </div>
+                    </div>
+                    
+                    <div class="education">
+                        <h4><i class="fas fa-graduation-cap gold-icon"></i> Education</h4>
+                        <p><strong>BSc in Statistics</strong> — University of Embu (2021-2025)</p>
+                        <p><strong>KCSE</strong> — Jomo Kenyatta Boys High School (2017-2021)</p>
+                        <p><strong>Certification:</strong> Computer Application Training — Main Flow Institute</p>
+                    </div>
+                </div>
+                
+                <div class="skills-section" data-aos="fade-left">
+                    <div class="skills-card glass-effect">
+                        <h3>Technical Toolkit</h3>
+                        <div class="skills-cloud">
+                            <span class="skill-badge">R</span>
+                            <span class="skill-badge">Power BI</span>
+                            <span class="skill-badge">SPSS</span>
+                            <span class="skill-badge">Minitab</span>
+                            <span class="skill-badge">Excel</span>
+                            <span class="skill-badge">Google Workspace</span>
+                            <span class="skill-badge">Data Cleaning</span>
+                            <span class="skill-badge">Visualization</span>
+                            <span class="skill-badge">Statistical Modeling</span>
+                            <span class="skill-badge">Hypothesis Testing</span>
+                            <span class="skill-badge">Report Writing</span>
+                            <span class="skill-badge">M&E</span>
+                            <span class="skill-badge">Budget Planning</span>
+                            <span class="skill-badge">Research Methodology</span>
+                        </div>
+                        
+                        <h4 style="margin-top: 2rem;">Languages</h4>
+                        <div class="lang-items">
+                            <span class="lang-item"><i class="fas fa-check-circle gold-icon"></i> English (Fluent)</span>
+                            <span class="lang-item"><i class="fas fa-check-circle gold-icon"></i> Kiswahili (Fluent)</span>
+                        </div>
+                        
+                        <a href="#" class="btn-secondary download-cv" id="download-cv"><i class="fas fa-download"></i> Download CV (PDF)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section - Clickable Contact Cards -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">CONNECT</span>
+                <h2>Let's Work <span class="gold-text">Together</span></h2>
+                <p>Ready to transform your data into insights?</p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Email Card - Clickable -->
+                <div class="contact-card glass-effect" onclick="window.location.href='mailto:14peterthuomuiruri@gmail.com'">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>14peterthuomuiruri@gmail.com</p>
+                    <span class="contact-action">Click to send <i class="fas fa-arrow-right"></i></span>
+                </div>
+                
+                <!-- Phone Card 1 - Clickable -->
+                <div class="contact-card glass-effect" onclick="window.location.href='tel:+254795594287'">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>+254 795 594 287</p>
+                    <span class="contact-action">Click to call <i class="fas fa-arrow-right"></i></span>
+                </div>
+                
+                <!-- Phone Card 2 - Clickable -->
+                <div class="contact-card glass-effect" onclick="window.location.href='tel:+254718042305'">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>+254 718 042 305</p>
+                    <span class="contact-action">Click to call <i class="fas fa-arrow-right"></i></span>
+                </div>
+                
+                <!-- Location Card -->
+                <div class="contact-card glass-effect">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p>Nakuru / Embu, Kenya</p>
+                </div>
+            </div>
+            
+            <!-- Simple Contact Form (optional - for InfinityFree, use Formspree) -->
+            <div class="form-container glass-effect" data-aos="fade-up">
+                <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-row">
+                        <textarea name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary glass-button">SEND MESSAGE <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Peter Thuo Muiruri — Data Analyst & Statistician</p>
+            <p class="footer-quote">Transforming data to insights</p>
+        </div>
+    </footer>
+
+    <!-- Service Detail Modal (hidden by default) -->
+    <div id="service-modal" class="modal">
+        <div class="modal-content glass-effect">
+            <span class="modal-close">&times;</span>
+            <div id="modal-content-area"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
